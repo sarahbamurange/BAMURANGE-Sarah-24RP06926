@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="">
+        <input type="text" placeholder="enter your name" id="ket"><br>
+        <input type="text" placeholder="enter ur home place" id="ber"><br>
+        <button onclick="checkValidation()">checkValidation</button>
+    </form>
+
+</body>
+
+</html>
+<script>
+    function checkValidation() {
+        const a = document.getElementById("ket").value;
+        const b = document.getElementById("ber").value;
+        if (a.trim() === '' || b.trim() === '') {
+            alert('inputs can not be empty');
+            return false;
+        } else {
+            alert('they are not empty');
+            return true;
+        };
+    }
+
+</script>
